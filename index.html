@@ -1,45 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="google-site-verification" content="qXuCjx9WO7-BTWChf0azuDC_foHTXUQGSse1ICbCngU" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAMIR PURI OFFICIAL</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <div class="hero">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">HIRE ME</a></li>
-            </ul>
-        </nav>
-        <marquee> THIS IS SAMIR PURI OFFICIAL WEBSITE AND THIS WEBSITE IS UNDER DEVEOLPING.
-            THANK YOU! </marquee>
-        <div class="detel">
-            <h1>I,M SAMIR<span>PURI</span></h1><br><br>
-            <h2> NOTE: THIS WEBSITE IS UNDER DEVELOPING</h2><br><br>
-            <p>HEY I AM SAMIR PURI FROM CHITWAN
-<br> NICE TO MEET YOU. </p>
-            <a href="#">Downdload CV</a>
-        </div>
-        <div class="images">
-            <img src="images/shape.png" class="shape">
-            <img src="images/girl.png" class="girl">
-        </div>
+<form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form>
 
-        <div class="social">
-           <a href="https://www.facebook.com/samirpuri.204"><i class="fab fa-facebook"></i></a>
-           <a href="#"><i class="fab fa-instagram"></i></a>
-          
-        </div>
-    </div>
-</body>
-</html>
+<script>
+  const scriptURL = '<SCRIPT URL>'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+        
