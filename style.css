@@ -1,44 +1,76 @@
-/*  import google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* Import Bootstrap */
-@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
-
-body{
-
-         font-family: 'Roboto', sans-serif;
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-      
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
 header {
     background-color: #333;
-    color: white;
+    color: #fff;
     padding: 10px 0;
     text-align: center;
 }
 
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
 nav ul {
-     display: inline;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
     margin: 0 10px;
 }
 
 nav ul li a {
-     color: white;
+    color: #fff;
     text-decoration: none;
 }
 
+/* Section styles */
 section {
     padding: 20px;
     margin: 20px 0;
+    background-color: #fff;
 }
 
+section h2 {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
 
+section p {
+    color: #666;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio styles */
 .portfolio-item {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .portfolio-item img {
@@ -46,173 +78,10 @@ section {
     height: auto;
 }
 
+/* Footer styles */
 footer {
     text-align: center;
-    padding: 10px 0;
     background-color: #333;
-    color: white;
+    color: #fff;
+    padding: 10px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
