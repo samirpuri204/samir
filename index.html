@@ -1,1 +1,132 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">Your Name</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="container">
+      <h1 class="animate-hero">Hello, I'm <span class="highlight">Your Name</span></h1>
+      <p class="animate-hero">I'm an aspiring <span class="highlight">App Developer</span>, <span class="highlight">Web Developer</span>, and <span class="highlight">AI Enthusiast</span> from Chitwan, Nepal, currently studying in Australia.</p>
+      <a href="#projects" class="btn animate-hero">View My Work</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="animate-section">About Me</h2>
+      <div class="about-content">
+        <img src="images/profile.jpg" alt="Your Name" class="profile-pic animate-section">
+        <div class="about-text animate-section">
+          <p>Hi! I'm <span class="highlight">Your Name</span>, a passionate IT student currently pursuing higher education in Australia. I hail from Chitwan, Nepal, and I'm deeply interested in <span class="highlight">App Development</span>, <span class="highlight">Web Development</span>, and <span class="highlight">Artificial Intelligence</span>.</p>
+          <p>I love building innovative solutions that solve real-world problems. Whether it's creating user-friendly apps, designing responsive websites, or exploring the fascinating world of AI, I'm always eager to learn and grow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="animate-section">My Skills</h2>
+      <div class="skills-grid animate-section">
+        <div class="skill">
+          <h3>App Development</h3>
+          <p>I build cross-platform mobile applications using Flutter and React Native.</p>
+        </div>
+        <div class="skill">
+          <h3>Web Development</h3>
+          <p>I create responsive and dynamic websites using HTML, CSS, JavaScript, and React.</p>
+        </div>
+        <div class="skill">
+          <h3>Artificial Intelligence</h3>
+          <p>I explore AI concepts like machine learning, natural language processing, and computer vision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="animate-section">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project animate-section">
+          <img src="images/project1.jpg" alt="Project 1">
+          <h3>E-Commerce App</h3>
+          <p>A Flutter-based mobile app for online shopping.</p>
+        </div>
+        <div class="project animate-section">
+          <img src="images/project2.jpg" alt="Project 2">
+          <h3>Portfolio Website</h3>
+          <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project animate-section">
+          <img src="images/project3.jpg" alt="Project 3">
+          <h3>AI Chatbot</h3>
+          <p>A chatbot powered by natural language processing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Demo Section -->
+  <section id="demo">
+    <div class="container">
+      <h2 class="animate-section">Project Demo</h2>
+      <div class="video-container animate-section">
+        <video controls>
+          <source src="videos/demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="animate-section">Contact Me</h2>
+      <p class="animate-section">Let's connect and build something amazing together!</p>
+      <form action="#" method="post" class="animate-section">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- GSAP Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
