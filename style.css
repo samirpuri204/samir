@@ -1,5 +1,30 @@
+body {
+  font-size: 18px;
+  padding: 20px;
+}
 
-/* General Styles */
+/* For tablets or mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .header {
+    display: block;  /* Adjust layout for smaller screens */
+  }
+}
+
+/* For very small screens (e.g., phones) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    font-size: 16px; /* Make text fit better on small screens */
+  }
+}/* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
