@@ -152,15 +152,7 @@ section h2 {
   border-radius: 5px;
 }
 
-/* Video Demo Section */
-.video-container {
-  text-align: center;
-}
 
-video {
-  max-width: 100%;
-  border-radius: 10px;
-}
 
 /* Contact Form */
 form {
