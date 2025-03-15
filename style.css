@@ -191,8 +191,39 @@ form input, form textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}.mobile-menu {
+  display: none; /* Hide menu by default */
 }
 
+.menu-toggle {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block; /* Show the mobile menu on smaller screens */
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 200px;  /* Each item takes equal space, but can shrink to fit */
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatic column resizing */
+}
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+}
 form button {
   background: #0073e6;
   color: #fff;
