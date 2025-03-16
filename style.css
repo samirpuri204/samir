@@ -52,8 +52,8 @@ nav ul li a {
 
 /* Hero Section */
 header {
-  background: linear-gradient(135deg, #000000);
-  color: #000000;
+  background: linear-gradient(135deg, #f4f4f4,#333);
+  color: #fff;
   padding: 100px 0;
   text-align: center;
 }
