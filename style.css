@@ -3,8 +3,28 @@ body {
   padding: 20px;
 }
 
+/* For tablets or mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
 
-/* General Styles */
+  .header {
+    display: block;  /* Adjust layout for smaller screens */
+  }
+}
+
+/* For very small screens (e.g., phones) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    font-size: 16px; /* Make text fit better on small screens */
+  }
+}/* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -52,7 +72,7 @@ nav ul li a {
 
 /* Hero Section */
 header {
-  background: linear-gradient(135deg, #f4f4f4,#0073e6);
+  background: linear-gradient(135deg, #0073e6, #00c6ff);
   color: #fff;
   padding: 100px 0;
   text-align: center;
@@ -61,7 +81,6 @@ header {
 header h1 {
   font-size: 3rem;
   margin-bottom: 10px;
-  color: #333;
 }
 
 header p {
@@ -78,7 +97,7 @@ header .btn {
 }
 
 .highlight {
-  color: #fff;
+  color: #ffdd57;
 }
 
 
@@ -180,8 +199,31 @@ form input, form textarea {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block; /* Show the mobile menu on smaller screens */
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.item {
+  flex: 1 1 200px;  /* Each item takes equal space, but can shrink to fit */
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatic column resizing */
+}
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+}
 
+body {
+  font-size: 16px;
+}
 form button {
   background: #0073e6;
   color: #fff;
