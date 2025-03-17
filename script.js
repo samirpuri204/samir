@@ -36,6 +36,8 @@ document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
 });
 <script>
   window.addEventListener("load", function () {
-    document.getElementById("preloader").style.display = "none";
+    setTimeout(function () {
+      document.getElementById("preloader").style.display = "none";
+    }, 500); // Ensures preloader disappears after 0.5s even if page loads instantly
   });
 </script>
