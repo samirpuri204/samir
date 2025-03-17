@@ -26,7 +26,7 @@ body {
 }
 #preloader {
   opacity: 1;
-  transition: opacity 0.5s ease-out;
+  transition: opacity 1s ease-out;
 }
 .hidden {
   opacity: 0;
