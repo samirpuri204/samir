@@ -89,6 +89,9 @@ body {
   display: flex !important; /* Ensure it's visible */
 }
 
+#preloader {
+  background: red !important; /* If it turns red, it's visible */
+}
 /* For very small screens (e.g., phones) */
 @media (max-width: 480px) {
   body {
