@@ -34,3 +34,8 @@ document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+<script>
+  window.addEventListener("load", function () {
+    document.getElementById("preloader").style.display = "none";
+  });
+</script>
