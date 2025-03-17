@@ -85,7 +85,9 @@ body {
   50% { transform: scale(1.5); opacity: 1; }
   100% { transform: scale(0); opacity: 0; }
 }
-
+#preloader {
+  display: flex !important; /* Ensure it's visible */
+}
 
 /* For very small screens (e.g., phones) */
 @media (max-width: 480px) {
