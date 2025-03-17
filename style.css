@@ -14,6 +14,9 @@ body {
     display: block;  /* Adjust layout for smaller screens */
   }
 }
+* {
+  animation-play-state: running !important;
+}
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
 #preloader {
@@ -39,7 +42,11 @@ body {
   0% { text-shadow: 0 0 5px red, 0 0 10px orange, 0 0 20px yellow; }
   100% { text-shadow: 0 0 10px red, 0 0 20px orange, 0 0 30px yellow; }
 }
-
+#preloader {
+  visibility: visible; 
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
 /* For very small screens (e.g., phones) */
 @media (max-width: 480px) {
   body {
