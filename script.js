@@ -39,11 +39,11 @@ document.getElementById('ai-submit').addEventListener('click', async function ()
 
 async function fetchAIResponse(input) {
   try {
-    const response = await fetch('https://api.together.xyz/v1/chat/completions', { // Replace with actual endpoint URL
+    const response = await fetch('https://api.openai.com/v1/models', { // Replace with actual endpoint URL
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer $TOGETHER_API_KEY', // Replace with your API key
+        'Authorization': 'Bearer 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', // Replace with your API key
       },
       body: JSON.stringify({
         query: input, // The user's query
