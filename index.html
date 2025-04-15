@@ -2,9 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head
+   <style>
+    body { font-family: Arial; margin: 40px; }
+    #chat { width: 100%; height: 300px; border: 1px solid #ccc; overflow-y: auto; padding: 10px; }
+    input { width: 80%; padding: 10px; }
+    button { padding: 10px; }
+  </style>  
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4590847087721354"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+    </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-adsense-account" content="ca-pub-4590847087721354">
@@ -27,8 +34,36 @@
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
+<h2>Chat with AI</h2>
+<div id="chat"></div>
+<input id="userInput" placeholder="Type your message..."/>
+<button onclick="sendMessage()">Send</button>
 
-  <!-- Navigation Bar -->
+<script>
+  const apiKey = "YOUR_OPENAI_API_KEY";
+  async function sendMessage() {
+    const userText = document.getElementById("userInput").value;
+    document.getElementById("chat").innerHTML += "<div><b>You:</b> " + userText + "</div>";
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer " + apiKey
+      },
+      body: JSON.stringify({
+        model: "gpt-3.5-turbo",
+        messages: [{ role: "user", content: userText }]
+      })
+    });
+    const data = await response.json();
+    const reply = data.choices[0].message.content;
+    document.getElementById("chat").innerHTML += "<div><b>Bot:</b> " + reply + "</div>";
+    document.getElementById("userInput").value = "";
+  }
+</script>
+
+</body>
+</html>  <!-- Navigation Bar -->
   <nav>
     <div class="container">
       <a href="#" class="logo">Samir Puri</a>
